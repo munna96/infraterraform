@@ -20,7 +20,7 @@ variable "security_group" {
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "mush-ec2-instance" #instance name
+    default     = "mush-ec2-instance" #your instance name
 } 
 variable "ami_id" { 
     description = "AMI for Amazon Linux Ec2 instance" 
@@ -39,7 +39,7 @@ variable "acl" {
 variable "bucket_prefix" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
-    default     = "mush-s3bucket-"
+    default     = "mush-s3bucket-" #you have to change the bucket name 
 }
 variable "tags" {
     type        = map
