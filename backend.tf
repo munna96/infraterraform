@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-bucket-2902"
+    bucket = "sherlokbuk"
     key = "main"
     region = "ap-south-1"
-    dynamodb_table = "mushStatelock"
+    dynamodb_table = "sheelok_table"
   }
 }
