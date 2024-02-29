@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "jenkin_msuh" 
+    default     =  "jenkin_msuh"  #key name should be changed with your key pair name which is laready existed in your system
 }
 
 variable "instance_type" { 
@@ -15,16 +15,16 @@ variable "instance_type" {
 
 variable "security_group" { 
     description = "Name of security group" 
-    default     = "jenkins-sgroup-feb-2024_msuh" 
+    default     = "jenkins-sgroup-feb-2024_msuh" #have to change
 }
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "mush-ec2-instance" 
+    default     = "mush-ec2-instance" #instance name
 } 
 variable "ami_id" { 
-    description = "AMI for Ubuntu Ec2 instance" 
-    default     = "ami-0e670eb768a5fc3d4" 
+    description = "AMI for Amazon Linux Ec2 instance" 
+    default     = "ami-0e670eb768a5fc3d4" #AMI for Amazon Linux Ec2 instance
 }
 variable "versioning" {
     type        = bool
@@ -39,7 +39,7 @@ variable "acl" {
 variable "bucket_prefix" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
-    default     = "my-s3bucket-"
+    default     = "mush-s3bucket-"
 }
 variable "tags" {
     type        = map
