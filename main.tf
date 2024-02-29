@@ -57,6 +57,6 @@ resource "aws_eip" "myFirstInstance" {
   vpc      = true
   instance = aws_instance.myFirstInstance.id
 tags= {
-    Name = "mush_elastic_ip"
+    Name = "sherlok_elastic_ip"
   }
 }
