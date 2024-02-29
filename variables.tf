@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "jenkin_msuh"  #key name should be changed with your key pair name which is laready existed in your system
+    default     =  "jenkin_mush"  #key name should be changed with your key pair name which is laready existed in your system
 }
 
 variable "instance_type" { 
