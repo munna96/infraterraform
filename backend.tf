@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "sherlokbuk"
+    bucket = "jenkinmush"
     key = "main"
     region = "ap-south-1"
-    dynamodb_table = "sheelok_table"
+    dynamodb_table = "jenkin_table"
   }
 }
